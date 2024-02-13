@@ -7,17 +7,18 @@ const FeatureBlock2 = () => {
         <div className="row align-items-center">
           <div className="col-xl-5 col-md-6" data-aos="fade-right">
             <div className="title-style-one mb-30 mt-30">
-              <div className="sc-title">BECOME AN INSTRUCTOR</div>
+              {/* <div className="sc-title">BECOME AN ENTREPRENEUR</div> */}
               <h2 className="main-title fw-500 tx-dark m0">
-                Join us &amp; Spread Knowledge.
+                Customized Action Plan.
               </h2>
             </div>
             <p className="fs-20 tx-dark mb-50 md-mb-30">
-              Instructors from around the world teach millions of students on
-              jano. We provide the tools and skills to teach what you love.
+              You tell us what you want to achieve, We&#39;ll build a kick-ass
+              plan to get it done fast. We&#39;ll customize your plan to take
+              advantage of the playbooks of thousands of startups before you.
             </p>
             <Link href="/contact" className="btn-one fw-500">
-              Start Teaching Now
+              Lets Build Your Plan
             </Link>
           </div>
           {/* End .col-xl-5 */}

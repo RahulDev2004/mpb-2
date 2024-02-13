@@ -1,18 +1,18 @@
 const featuresData = [
   {
-    icon: "/images/icon/icon_124.svg",
-    title: "Learn skills over 120k+",
-    subtitle: "Video courses.",
+    icon: "/images/mpb/karthikeyan.png",
+    title: "Karthikeyan",
+    subtitle: "Founder of Hion Studios",
   },
   {
-    icon: "/images/icon/icon_125.svg",
-    title: "Choose courses taught",
-    subtitle: "Real-world experts.",
+    icon: "/images/mpb/abhinav.png",
+    title: "Abhinav",
+    subtitle: "CEO of Hion Studios",
   },
   {
-    icon: "/images/icon/icon_126.svg",
-    title: "Learn lifetime access on",
-    subtitle: "Mobile and desktop.",
+    icon: "/images/mpb/arav.png",
+    title: "Aravindh Ravichandran",
+    subtitle: "Founder and CEO of ROOK",
   },
 ];
 
@@ -27,7 +27,7 @@ const FeatureBlock = () => {
             </div>
             <div className="ps-4 text-wrapper">
               <h4 className="text-white m0">{feature.title}</h4>
-              <p className="m0">{feature.subtitle}</p>
+              <div className="m0 fs-20 text-grey">{feature.subtitle}</div>
             </div>
           </div>
           {/* /.card-style-seventeen */}

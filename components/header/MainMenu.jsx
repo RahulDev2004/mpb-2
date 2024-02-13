@@ -53,7 +53,6 @@ const MainMenu = () => {
               // className="nav-link dropdown-toggle active-menu"
               href="#"
               role="button"
-              data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
               className={
@@ -61,48 +60,14 @@ const MainMenu = () => {
                   menu.items.some((elm) => isActive(elm.link))
                 )
                   ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
+                  : "nav-link dropdown"
               }
 
               // style={{color:'green'}}
             >
               Home
             </a>
-            <ul className="dropdown-menu">
-              <li>
-                <div className="row">
-                  {menuItems.map((menu, index) => (
-                    <div className="col-lg-4" key={index}>
-                      <div className="menu-column">
-                        <h6
-                          className={
-                            menu.items.some((elm) => isActive(elm.link))
-                              ? "mega-menu-title active-menu"
-                              : "mega-menu-title"
-                          }
-                        >
-                          {menu.title}
-                        </h6>
-                        <ul className="style-none mega-dropdown-list">
-                          {menu.items.map((item, index) => (
-                            <li key={index}>
-                              <Link
-                                href={item.link}
-                                className={`dropdown-item ${
-                                  isActive(item.link) ? "active" : ""
-                                }`}
-                              >
-                                <span>{item.title}</span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </li>
-            </ul>
+            
           </li>
           {/* End li (home mega menu) */}
 
@@ -120,46 +85,12 @@ const MainMenu = () => {
               }
               href="#"
               role="button"
-              data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
             >
               Pages
             </a>
-            <ul className="dropdown-menu">
-              {pagesItems.map((item, index) => (
-                <li className="dropdown-submenu dropdown" key={index}>
-                  <a
-                    // className="dropdown-item dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside"
-                    aria-expanded="false"
-                    className={
-                      item.subItems.some((elm) => isActive(elm.link))
-                        ? "dropdown-item dropdown-toggle active-menu"
-                        : "dropdown-item dropdown-toggle"
-                    }
-                    href="#"
-                  >
-                    <span>{item.title}</span>
-                  </a>
-                  <ul className="dropdown-menu">
-                    {item.subItems.map((subMenu, i) => (
-                      <li key={i}>
-                        <Link
-                          href={subMenu.link}
-                          className={`dropdown-item ${
-                            isActive(subMenu.link) ? "active" : ""
-                          }`}
-                        >
-                          <span>{subMenu.title}</span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-            </ul>
+            
           </li>
           {/* End li (pages) */}
 

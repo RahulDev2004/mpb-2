@@ -8,15 +8,15 @@ const IntroAbout = () => {
     {
       id: 1,
       cardNo: "card-one",
-      title: "Happier",
-      subtitle: "Customers",
+      title: "Amrish",
+      subtitle: "Advisor",
     },
-    {
-      id: 2,
-      title: "30+",
-      cardNo: "card-two",
-      subtitle: "Insurance Item",
-    },
+    // {
+    //   id: 2,
+    //   title: "30+",
+    //   cardNo: "card-two",
+    //   subtitle: "Insurance Item",
+    // },
     {
       id: 3,
       title: "Saller Leads",
@@ -38,23 +38,25 @@ const IntroAbout = () => {
       <div className="row">
         <div className="col-xl-5 col-md-6 order-md-last">
           <div className="text-wrapper md-pb-70">
-            <Image
+            {/* <Image
               width={66}
               height={66}
               src="/images/icon/icon_103.svg"
               alt="icon"
               className="lazy-img cursor-pointer"
               onClick={() => setOpen(true)}
-            />
-            <p className="tx-dark pt-30 pb-30 md-pb-15" data-aos="fade-up">
-              The team signed <span className="fw-500">~$7,000,000</span> in new
-              business in July. Accelerator has been a large part of that.
+            /> */}
+            <p className="tx-dark pt-30 pb-0" data-aos="fade-up">
+              Your Dedicated <span className="fw-500">Startup</span> Advisor
             </p>
+            <div className="fs-20 pt-15 pb-20 md-pb-15" data-aos="fade-up">
+              Team up with a dedicated, experienced Startup Advisor who knows exactly where to find the help you need to scale
+            </div>
             <h6
               className="fs-20 tx-dark d-inline-block fst-italic position-relative ps-4"
-              data-aos="fade-up"
+              data-aos="fade-up" 
             >
-              Jessica Woodbeck
+              Meet Your Advisor
             </h6>
           </div>
           {/* /.text-wrapper */}
@@ -72,7 +74,7 @@ const IntroAbout = () => {
               width={561}
               height={732}
               layout="intrinsic"
-              src="/images/media/img_53.png"
+              src="/images/mpb/amrish.png"
               className="lazy-img avatar-img"
               alt="man"
             />

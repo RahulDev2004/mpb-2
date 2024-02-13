@@ -39,16 +39,10 @@ const Counter = ({ data }) => {
 const CounterSection = () => {
   const counterData = [
     {
-      title: "Cumulative trading volume",
-      value: 1,
-      symbol: "b+",
-      color: "#FFC735",
-    },
-    {
-      title: "Million Insurance Coverage",
+      title: "Questions Answered",
       value: 10,
-      symbol: "",
-      color: "#F177FF",
+      symbol: "k+",
+      color: "#FFC735",
     },
     {
       title: "Country & Regions",

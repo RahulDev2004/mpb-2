@@ -10,7 +10,7 @@ const Services2 = () => {
     {
       icon: "/images/icon/icon_52.svg",
       title: "Content writing & Affiliate",
-      delay: 200,
+      delay: 100,
     },
     {
       icon: "/images/icon/icon_53.svg",
@@ -20,18 +20,18 @@ const Services2 = () => {
     {
       icon: "/images/icon/icon_54.svg",
       title: "SEO & Social marketing",
-      delay: 200,
+      delay: 100,
     },
-    {
-      icon: "/images/icon/icon_55.svg",
-      title: "Pay per click",
-      delay: 300,
-    },
+    // {
+    //   icon: "/images/icon/icon_55.svg",
+    //   title: "Pay per click",
+    //   delay: 300,
+    // },
   ];
 
   return (
     <>
-      <div className="col-lg-5 me-auto mt-40 md-mt-10" data-aos="fade-up">
+      <div className="col-lg-4 me-auto mt-40 md-mt-10" data-aos="fade-up">
         <div className="title-style-one">
           <h2 className="main-title fw-normal tx-dark m0">
             Let’s <br /> <span>Discover</span> all our Services.
@@ -44,16 +44,16 @@ const Services2 = () => {
       {services.map((service, index) => (
         <div
           key={index}
-          className={`col-lg-3 col-sm-6 d-flex mt-40`}
+          className={`col-lg-2 col-sm-6 d-flex mt-40`}
           data-aos="fade-up"
           data-aos-delay={service.delay}
         >
           <div className="card-style-ten d-flex flex-column bg-white pe-3 ps-3 pe-xl-5 ps-xl-5 pt-60 pb-45 lg-pt-40 lg-pb-30">
-            <div className="icon d-flex align-items-end">
+            <div className="icon d-flex align-items-center">
               <img src={service.icon} alt="icon" className="lazy-img" />
             </div>
-            <h4 className="fw-500 mt-20 mb-50">{service.title}</h4>
-            <Link
+            <h4 className="fw-500 mt-20 ">{service.title}</h4>
+            {/* <Link
               href="/pages-menu/service-details"
               className="read-btn mt-auto tran3s"
             >
@@ -62,13 +62,13 @@ const Services2 = () => {
                 alt="icon"
                 className="lazy-img"
               />
-            </Link>
+            </Link> */}
           </div>
           {/* /.card-style-ten */}
         </div>
       ))}
 
-      <div
+      {/* <div
         className="col-xxl-2 col-xl-3 col-lg-3 col-sm-5 ms-auto d-flex align-items-center justify-content-center text-center text-sm-start mt-40"
         data-aos="fade-up"
         data-aos-delay="400"
@@ -82,7 +82,7 @@ const Services2 = () => {
             Contact us
           </Link>
         </div>
-      </div>
+      </div> */}
       {/* End .col-xxl-2 */}
     </>
   );

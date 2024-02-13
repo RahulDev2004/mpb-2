@@ -13,10 +13,10 @@ const Portfolio = () => {
   return (
     <>
       <Gallery>
-        {portfolioItems.slice(55, 60).map((item, index) => (
+        {portfolioItems.slice(55, 56).map((item, index) => (
           <div className="isotop-item item-xl" key={index}>
-            <div className="portfolio-block-two mb-55 lg-mb-30">
-              <div className="img-holder">
+            <div className="portfolio-block-two mb-0 lg-mb-30">
+              <div className="img-holder" style={{ borderRadius: "50px" }}>
                 <Image
                   width={1320}
                   height={611}
@@ -24,21 +24,9 @@ const Portfolio = () => {
                   alt="portfolio image"
                   className="img-meta w-100 tran6s"
                 />
-                {item.videoUrl && (
-                  <button
-                    className={`fancybox ${item.overlayClass} tran3s`}
-                    onClick={() => {
-                      // call the appropriate handler function for each item
-                      const updatedIsOpen = [...isOpen];
-                      updatedIsOpen[index] = true;
-                      setOpen(updatedIsOpen);
-                    }}
-                  >
-                    <i className={item.iconClass} />
-                  </button>
-                )}
+              
 
-                {item.zoomImgSrc && (
+                {/* {item.zoomImgSrc && (
                   <Item
                     original={item.imgSrc}
                     thumbnail={item.imgSrc}
@@ -59,21 +47,21 @@ const Portfolio = () => {
                       </div>
                     )}
                   </Item>
-                )}
+                )} */}
 
-                <div className="caption tran3s d-flex justify-content-end flex-column">
+                {/* <div className="caption tran3s d-flex justify-content-end flex-column">
                   <span className="tag">{item.captionTags}</span>
                   <h6>
                     <Link href="/portfolio/1" className="pj-title">
                       {item.captionTitle}
                     </Link>
                   </h6>
-                </div>
+                </div> */}
                 {/* /.caption */}
               </div>
             </div>
             {/* /.portfolio-block-two */}{" "}
-            {item.videoUrl && (
+            {/* {item.videoUrl && (
               <ModalVideo
                 channel="youtube"
                 autoplay
@@ -86,7 +74,7 @@ const Portfolio = () => {
                   setOpen(updatedIsOpen);
                 }}
               />
-            )}
+            )} */}
           </div>
           /* /.isotop-item */
         ))}

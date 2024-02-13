@@ -1,6 +1,6 @@
 const Skills = () => {
   const skills = [
-    { name: "Great Interface", bgColor: "#FFF8F8" },
+    { name: "Domain Expertice", bgColor: "#FFF8F8" },
     { name: "Experienced", bgColor: "#E4FCF9" },
     { name: "Low Price", bgColor: "#E5F4FB" },
     { name: "Customizable", bgColor: "#FFF9E6" },

@@ -17,30 +17,34 @@ const Feature = () => {
               data-aos="fade-left"
             >
               <div className="title-style-ten">
-                <div className="sc-title">FEATURES</div>
+                {/* <div className="sc-title">FEATURES</div> */}
                 <h2 className="main-title font-recoleta fw-normal tx-dark">
-                  Everything starts with a{" "}
+                  Connect Directly with{" "}
                   <span className="position-relative">
-                    Marketing.{" "}
+                    Experts
                     <img src="/images/shape/shape_122.svg" alt="shape" />
                   </span>
                 </h2>
               </div>{" "}
               {/* /.title-style-ten */}
-              <p className="fs-20 pt-30 pb-30 lg-pb-10 md-pt-10">
-                Turn your business into a sales machine today with lorem Things
-                go wrong have questions.
+              <p className="fs-20 pt-30 pb-20 lg-pb-8 md-pt-10">
+                Stuck on something? Dont sweat it. Jump on a call with the
+                Founder guru on the topic and get instant answers to anything
+                from How to Optimize my Facebook Spend to Give me a brutal
+                review of my Pitch Deck.
               </p>
-              <ul className="style-none list-item">
+              {/* <ul className="style-none list-item">
                 {items.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
-              </ul>
-              <div className="btn-eighteen position-relative d-inline-block tx-dark mt-35 lg-mt-20">
-                Want to learn more?{" "}
-                <Link href="/pages-menu/about-us-v1" className="fw-500 tran3s">
-                  Click here <i className="bi bi-arrow-right" />
-                </Link>
+              </ul> */}
+              <div className="d-sm-flex align-items-center platform-button-group-three mt-5 lg-mt-3">
+                <a href="#" className={`d-flex align-items-center`}>
+                  <div>
+                    <p className="fs-50 pt-15">Get Connected</p>
+                    {/* <strong>{button.platform}</strong> */}
+                  </div>
+                </a>
               </div>
             </div>{" "}
             {/* /.block-style-four */}

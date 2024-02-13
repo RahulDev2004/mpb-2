@@ -1,10 +1,10 @@
 import Wrapper from "../layout/wrapper";
-import Insurance from "./home/insurance";
+import LeadGeneration from "./home/lead-generation"
 
 const MainRoot = () => {
   return (
     <Wrapper>
-      <Insurance />
+      <LeadGeneration />
     </Wrapper>
   );
 };

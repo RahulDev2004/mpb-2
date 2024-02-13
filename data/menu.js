@@ -2,11 +2,6 @@ export const menuItems = [
   {
     title: "Business",
     items: [
-      { title: "Insurance", link: "/" },
-      { title: "Web Hosting", link: "/home/web-hosting" },
-      { title: "Education", link: "/home/education" },
-      { title: "N.P. Charity", link: "/home/charity" },
-      { title: "Real Estate", link: "/home/real-estate" },
     ],
   },
   {

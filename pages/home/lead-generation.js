@@ -2,12 +2,16 @@ import React from "react";
 import Seo from "../../components/common/Seo";
 import Header from "../../components/home-page/home-13/Header";
 import Hero from "../../components/home-page/home-13/hero";
+import About from "../../components/home-page/home-5/about";
 import Feedback from "../../components/home-page/home-13/Feedback";
 import Feature from "../../components/home-page/home-13/Feature";
+import Features2 from "../../components/home-page/home-7/Features2";
 import Leads from "../../components/home-page/home-13/Leads";
+import FeatureBlock from "../../components/home-page/home-3/FeatureBlock";
 import FeaturesBlock from "../../components/home-page/home-13/FeaturesBlock";
 import Counter from "../../components/home-page/home-13/Counter";
 import SuccessStory from "../../components/home-page/home-13/SuccessStory";
+import Portfolio from "../../components/home-page/home-12/Portfolio";
 import Testimonial from "../../components/home-page/home-13/Testimonial";
 import Faq from "../../components/home-page/home-13/Faq";
 import Link from "next/link";
@@ -16,10 +20,14 @@ import Subscribe from "../../components/home-page/home-13/Subscribe";
 import CopyrightFooter from "../../components/home-page/home-13/CopyrightFooter";
 import Image from "next/image";
 
+import IntroAbout from "../../components/home-page/home-1/IntroAbout";
+import AppBanner from "../../components/home-page/home-1/AppBanner";
+import FeatureBlock2 from "../../components/home-page/home-3/FeatureBlock2";
+
 const LeadGeneration = () => {
   return (
     <>
-      <Seo pageTitle="Insurance" />
+      <Seo pageTitle="MyProBuddy" />
       {/* <!-- 
       =============================================
     Theme Default Menu
@@ -32,20 +40,88 @@ const LeadGeneration = () => {
         ============================================== 
         */}
       <Hero />
+      <div className="fancy-feature-thirtyFive mt-90 md-mt-70">
+        <div className="container" data-aos="fade-up">
+          
+          {/* /.top-banner */}
+        </div>
+        {/* End .container */}
+
+        <div className="bg-wrapper mt-150 pt-100 lg-mt-80 lg-pt-70">
+          <div className="container">
+            <IntroAbout />
+          </div>
+        </div>
+        {/* /.bg-wrapper */}
+      </div>
       {/* /.hero-banner-nine */}
+      <br/><br/><br/><br/>
+      <div className="fancy-feature-thirtyNine position-relative zn2 pt-90 pb-50 lg-pt-50 lg-pb-10">
+        <div className="container">
+          <div className="row gx-xxl-5">
+            <FeatureBlock />
+          </div>
+        </div>
+        <img
+          src="/images/shape/shape_148.svg"
+          alt="shape"
+          className="shapes shape-one lazy-img"
+        />
+        <img
+          src="/images/shape/shape_149.svg"
+          alt="shape"
+          className="shapes shape-two lazy-img"
+        />
+        <img
+          src="/images/shape/shape_150.svg"
+          alt="shape"
+          className="shapes shape-three lazy-img"
+        />
+        <img
+          src="/images/shape/shape_151.svg"
+          alt="shape"
+          className="shapes shape-four lazy-img"
+        />
+      </div>
+
+      <div className="fancy-feature-thirtyEight mt-140 lg-mt-100">
+        <div className="container">
+          <AppBanner />
+        </div>
+        {/* /.container */}
+      </div>
       {/*
         =====================================================
         Feedback Section Eight
         =====================================================
         */}
-      <Feedback />
+      <div className="wrapper mt-90 lg-mt-30">
+        <div className="container">
+          <div className="row">
+            <Counter />
+          </div>
+        </div>
+      </div>
+      {/* <Feedback /> */}
+      {/* <div className="fancy-feature-eight position-relative mt-225 xl-mt-150 md-mt-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6 col-md-7 ms-auto order-lg-last">
+              <Features2 />
+            </div>
+          </div>
+        </div>
+        </div> */}
       {/* /.feedback-section-eight */}
-      {/* 
+      {/*  
         =============================================
         Feature Section Thirty
         ============================================== 
-        */}
+      */}
+      
       <Feature />
+      {/* <FeatureBlock2/>
+       */}
       {/* /.fancy-feature-thirty */}
 
       {/* 
@@ -76,14 +152,38 @@ const LeadGeneration = () => {
                   ROI.
                 </p>
               </div>
+              
               {/* /.title-style-ten */}
             </div>
           </div>
+           <div className="portfolio-gallery-two pt-0 lg-pt-0">
+        <div className="container">
+          <div className="wrapper">
+            <div id="isotop-gallery-wrapper">
+              <Portfolio />
+            </div>
+            {/* /#isotop-gallery-wrapper */}
+          </div>
+          {/* /.wrapper */}
+        </div>
+      </div>
+
+
+        <div className="fancy-feature-fortyEight position-relative">
+        <div className="container">
+          <div className="line-bg-wrapper position-relative pt-200 pb-200 lg-pt-120 lg-pb-110">
+            <About />
+          </div>
+          {/* /.line-bg-wrapper */}
+        </div>
+        {/* /.container */}
+      </div>
+
           {/* End .row */}
 
-          <div className="row">
+          {/* <div className="row">
             <Leads />
-          </div>
+          </div> */}
         </div>
         {/* /.container */}
 
@@ -113,14 +213,6 @@ const LeadGeneration = () => {
           {/* End .row */}
         </div>
         {/* End .container */}
-
-        <div className="wrapper mt-90 lg-mt-30">
-          <div className="container">
-            <div className="row">
-              <Counter />
-            </div>
-          </div>
-        </div>
         {/* /.wrapper */}
       </div>
       {/* /.fancy-feature-thirtyTwo */}

@@ -11,11 +11,6 @@ const AppBanner = () => {
       icon: "images/icon/playstore.svg",
       className: "windows-button",
     },
-    {
-      platform: "App store",
-      icon: "images/icon/apple-black.svg",
-      className: "ios-button",
-    },
   ];
 
   return (
@@ -23,35 +18,31 @@ const AppBanner = () => {
       <div className="col-lg-6">
         <div className="block-style-seven" data-aos="fade-right">
           <div className="title-style-one">
-            <div className="sc-title text-uppercase">MOBILE APP</div>
+            {/* <div className="sc-title text-uppercase">MOBILE APP</div> */}
             <h2 className="main-title fw-500 tx-dark m0">
-              Download our Jano Application.
+              Build your startup with a Dedictaed Advisor.
             </h2>
           </div>
-          <p className="fs-20 pt-30 pb-30 lg-pb-20">
-            Get control of all your insurance needs anywhere, anytime
+          <p className="fs-20 pt-30 pb-5 lg-pb-5">
+            You are not alone anymore. Team up with a dedicated, experienced Startup Advisor who knows exactly where to find the help you need to scale.
           </p>
-          <ul className="style-none list-item">
+          {/* <ul className="style-none list-item">
             {features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
-          </ul>
+          </ul> */}
           {/* End list */}
-
-          <div className="d-sm-flex align-items-center platform-button-group-three mt-55 lg-mt-30">
-            {buttons.map((button, index) => (
+          <br/><br/>
+          <div className="d-sm-flex align-items-center platform-button-group-three mt-5 lg-mt-3">
               <a
                 href="#"
-                className={`d-flex align-items-center ${button.className}`}
-                key={index}
+                className={`d-flex align-items-center`}
               >
-                <img src={button.icon} alt="" className="lazy-img icon" />
-                <div>
-                  <span>Get it on</span>
-                  <strong>{button.platform}</strong>
-                </div>
+              <div>
+                <p className="fs-50 pt-15">Get Connected</p>
+                {/* <strong>{button.platform}</strong> */}
+              </div>
               </a>
-            ))}
           </div>
           {/* /.platform-button-group-three */}
         </div>
