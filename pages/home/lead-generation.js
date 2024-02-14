@@ -218,7 +218,10 @@ const LeadGeneration = () => {
                   Plan
                 </h2>
                 <p className="fs-20 mt-20">
-                You tell us what you want to achieve, well build a kick-ass plan to get it done fast. Well customize your plan to take advantage of the playbooks of 1000 of startups before you.
+                You tell us what you want to achieve 
+                well build a kick ass plan to get it done fast. 
+                Well customize your plan to take advantage of the 
+                playbooks of 1000 of startups before you.
 
 
                 </p>
@@ -331,7 +334,7 @@ const LeadGeneration = () => {
               {/* End title */}
               {/* <Faq /> */}
               <div className="fs-20">
-              We have helped startups raise over $600 million in funding commitments. We can help you with every aspect of your fundraise from understanding how the process works to building your Pitch Deck to finding the perfect investors.
+              We have helped startups raise over 600 million in funding commitments. We can help you with every aspect of your fundraise from understanding how the process works to building your Pitch Deck to finding the perfect investors.
               </div>
               {/* /.accordion-style-six */}
               <a href="#" className="btn-one fw-500 mt-100 md-mt-40">
