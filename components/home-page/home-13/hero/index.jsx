@@ -22,12 +22,12 @@ const index = () => {
       </div>
       {/* /.image-gallery */}
 
-      <div className="partner-section-five position-relative mt-130 lg-mt-100">
+     <div className="partner-section-five position-relative mt-130 lg-mt-100">
         <div className="wrapper m-auto">
           <Partners />
         </div>
         {/* /.wrapper */}
-      </div>
+      </div> 
       {/* /.partner-section-five */}
     </div>
   );

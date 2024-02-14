@@ -71,124 +71,52 @@ const MainMenu = () => {
           </li>
           {/* End li (home mega menu) */}
 
-          <li className="nav-item  dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                pagesItems.some((menu) =>
-                  menu.subItems.some((elm) => isActive(elm.link))
-                ) ||
-                isActive("/pages-menu/pricing") ||
-                isActive("/pages-menu/testimonials")
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
-              href="#"
-              role="button"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Pages
-            </a>
-            
-          </li>
-          {/* End li (pages) */}
-
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                portfolioItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              aria-expanded="false"
-            >
-              Portfolio
-            </a>
-            <ul className="dropdown-menu">
-              {portfolioItems.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    href={item.link}
-                    className={`dropdown-item ${
-                      isActive(item.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{item.name}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </li>
+         
           {/* End li (portfolio) */}
 
-          <li className="nav-item dropdown">
-            <a
-              // className="nav-link dropdown-toggle"
-              className={
-                blogItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
+          <li className="nav-item ">
+          <a
+              // className="nav-link dropdown-toggle active-menu"
               href="#"
               role="button"
-              data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+              className={
+                menuItems.some((menu) =>
+                  menu.items.some((elm) => isActive(elm.link))
+                )
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown"
+              }
+
+              // style={{color:'green'}}
             >
-              Blog
+              Handbook
             </a>
-            <ul className="dropdown-menu">
-              {blogItems.map((blog, index) => (
-                <li key={index}>
-                  <Link
-                    href={blog.link}
-                    className={`dropdown-item ${
-                      isActive(blog.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{blog.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            
           </li>
           {/* End li (blog) */}
 
           <li className="nav-item dropdown">
-            <a
-              className={
-                contactItems.some((elm) => isActive(elm.link))
-                  ? "nav-link dropdown-toggle active-menu"
-                  : "nav-link dropdown-toggle"
-              }
+          <a
+              // className="nav-link dropdown-toggle active-menu"
               href="#"
               role="button"
-              data-bs-toggle="dropdown"
               data-bs-auto-close="outside"
               aria-expanded="false"
+              className={
+                menuItems.some((menu) =>
+                  menu.items.some((elm) => isActive(elm.link))
+                )
+                  ? "nav-link dropdown-toggle active-menu"
+                  : "nav-link dropdown"
+              }
+
+              // style={{color:'green'}}
             >
-              Contact
+              Join a Mentor
             </a>
-            <ul className="dropdown-menu">
-              {contactItems.map((contact, index) => (
-                <li key={index}>
-                  <Link
-                    href={contact.link}
-                    className={`dropdown-item ${
-                      isActive(contact.link) ? "active" : ""
-                    }`}
-                  >
-                    <span>{contact.text}</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+           
           </li>
           {/* End li (contact) */}
         </ul>

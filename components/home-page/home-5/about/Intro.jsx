@@ -2,9 +2,9 @@ const Intro = () => {
   return (
     <>
       <div className="title-style-eleven">
-        <div className="sc-title">ABOUT US</div>
+        <div className="sc-title">Curated Peer Groups</div>
         <h2 className="main-title tx-dark">
-          Create <br /> visual strategy lorem.
+        Grow Your Network 
         </h2>
       </div>
       <div className="d-flex mt-70 mb-40 lg-mt-40 lg-mb-10">
@@ -14,8 +14,7 @@ const Intro = () => {
           className="lazy-img d-none d-lg-block"
         />
         <p className="text-lg m0 ps-lg-5">
-          Inciddnt ut labore et dolor magna aliu. enim ad mim venam, quis nostru
-          labore elit lorem dus amet lorem.
+        Join hand-curated peer groups led by passionate Founders/CEOs in a private, intimate environment where everyone can be brutally honest.
         </p>
       </div>
     </>

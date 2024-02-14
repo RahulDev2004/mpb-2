@@ -2,24 +2,24 @@ import React from "react";
 
 const Partners = () => {
   const partners = [
-    { name: "Google", font: "" },
+    { name: "Forbes", font: "" },
     { name: "", font: "font-recoleta" },
-    { name: "Facebook", font: "font-recoleta" },
+    { name: "Innsurge", font: "font-recoleta" },
     { name: "", font: "" },
-    { name: "Insta", font: "" },
-    { name: "", font: "font-recoleta" },
-    { name: "Dribbble", font: "font-recoleta" },
-    { name: "", font: "" },
-    { name: "Fundbox", font: "" },
-    { name: "", font: "font-recoleta" },
-    { name: "Segment", font: "font-recoleta" },
+    { name: "PassionVista", font: "" },
+    // { name: "", font: "font-recoleta" },
+    // { name: "Dribbble", font: "font-recoleta" },
+    // { name: "", font: "" },
+    // { name: "Fundbox", font: "" },
+    // { name: "", font: "font-recoleta" },
+    // { name: "Segment", font: "font-recoleta" },
   ];
 
   return (
-    <div className="d-xl-flex align-items-center">
+    <div className="d-xl-flex justify-content-center align-items-center">
       <h3 className="title tx-dark d-flex justify-content-center align-items-center m0 lg-pb-30">
-        <span className="fw-bold">100+</span>
-        <span className="font-recoleta">Trusted Partners</span>
+        <span className="fw-bold"></span>
+        <span className="font-recoleta">Featured in</span>
         <span className="ms-4 d-none d-sm-inline-block">
           <img
             src="/images/shape/shape_119.svg"

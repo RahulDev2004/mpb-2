@@ -2,7 +2,7 @@ const coursesData = [
   {
     id: 1,
     tag: "FREE",
-    title: "Marketing.",
+    title: "Grants.",
     level: "Begainner",
     numClasses: 18,
     tag2: "FEATURED",
@@ -10,7 +10,7 @@ const coursesData = [
   {
     id: 2,
     tag: "PRO",
-    title: "Designing & Art.",
+    title: "Venture Capital.",
     level: "Mid",
     numClasses: 32,
     tag2: "POPULER",
@@ -18,7 +18,7 @@ const coursesData = [
   {
     id: 3,
     tag: "PRO",
-    title: "Programming & Coding",
+    title: "Angel Investors.",
     level: "Pro",
     numClasses: 20,
     tag2: "TRENDING",
@@ -26,7 +26,7 @@ const coursesData = [
   {
     id: 4,
     tag: "FREE",
-    title: "IT & Tecnology",
+    title: "Debt Funding",
     level: "Mid",
     numClasses: 13,
     tag2: "FEATURED",
@@ -46,13 +46,13 @@ const CourseFeatured = () => {
               {course.tag}
             </span>
             <h4 className="mb-0 mt-25">{course.title}</h4>
-            <ul className="style-none pb-40 lg-pb-20 d-flex justify-content-between">
+            <ul className="style-none pb-0 lg-pb-0 d-flex justify-content-between">
               <li>{course.level}</li>
               <li>{course.numClasses} Classes</li>
             </ul>
-            <span className="tag2 fw-bold tx-dark text-uppercase mt-auto">
+            {/* <span className="tag2 fw-bold tx-dark text-uppercase mt-auto">
               {course.tag2}
-            </span>
+            </span> */}
           </a>
           {/* /.card-style-nineteen */}
         </div>

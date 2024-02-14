@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Slider from "react-slick";
+import FeatureBlock2 from "./FeatureBlock2";
 import Image from "next/image";
 
 const courseData = [
@@ -116,7 +117,7 @@ const CourseFilter = () => {
 
   return (
     <>
-      <ul
+      {/* <ul
         className="nav nav-tabs border-0 mb-130 lg-mb-80 md-mb-30"
         role="tablist"
         data-aos="fade-up"
@@ -181,9 +182,9 @@ const CourseFilter = () => {
             </button>
           </li>
         </ul>
-      </ul>
+      </ul> */}
       {/* End ul */}
-
+      <FeatureBlock2 />
       <div className="slider-wrapper">
         <div
           className="tab-content position-relative zn2 course_slider_one"

@@ -56,10 +56,16 @@ const CounterSection = () => {
       symbol: "k",
       color: "#9671FF",
     },
+    {
+      title: "Happy Clients",
+      value: 100,
+      symbol: "%",
+      color: "#FF6A6A",
+    },
   ];
 
   return (
-    <div className="row">
+    <div className="row mb-110">
       {counterData.map((item, index) => (
         <div className="col-lg-3 col-sm-6" key={index}>
           <Counter data={item} />

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const FeatureBlock2 = () => {
   return (
-    <div className="fancy-feature-fortyFour position-relative pt-130 lg-pt-70">
+    <div className="fancy-feature-fortyFour position-relative pt-0 pb-100 lg-pt-0 pb-60">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-5 col-md-6" data-aos="fade-right">
